@@ -123,3 +123,16 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+img.socialIcon {
+  transition: transform 0.3s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.3s;
+  will-change: transform;
+}
+
+img.socialIcon:hover,
+img.socialIcon:focus {
+  transform: scale(1.25) rotate(-10deg);
+  box-shadow: 0 8px 24px rgba(78, 86, 126, 0.2), 0 1.5px 6px rgba(78, 86, 126, 0.12);
+  cursor: pointer;
+  outline: none;
+}
